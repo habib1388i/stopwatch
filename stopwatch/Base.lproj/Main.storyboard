@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qkr-CV-fKW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vII-tC-Dwy">
+            <objects>
+                <viewController id="qkr-CV-fKW" customClass="ViewController" customModule="timer90" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9LF-Y4-ohF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="506-Yg-LUK">
+                                <rect key="frame" x="0.0" y="339" width="194" height="328"/>
+                                <color key="backgroundColor" red="0.18460056189999999" green="0.58640098569999999" blue="0.96856290099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="1n1-Np-tWJ"/>
+                                    <constraint firstAttribute="width" constant="194" id="FXa-ge-gBd"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="btnplay:" destination="qkr-CV-fKW" eventType="touchUpInside" id="pTY-2x-b8B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfr-FH-zo3">
+                                <rect key="frame" x="0.0" y="127" width="375" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="lbz-US-DnK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mub-q4-Eng">
+                                <rect key="frame" x="313" y="43" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0u2-o8-A9M"/>
+                                    <constraint firstAttribute="height" constant="30" id="cAo-eF-Gos"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnreset:" destination="qkr-CV-fKW" eventType="touchUpInside" id="S6L-mN-ASg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLx-sL-oNo">
+                                <rect key="frame" x="194" y="339" width="181" height="328"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.28235294119999998" blue="0.19215686269999999" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="QuI-Lx-tP7"/>
+                                    <constraint firstAttribute="height" constant="328" id="o5j-4w-bkQ"/>
+                                </constraints>
+                                <state key="normal" image="pause"/>
+                                <connections>
+                                    <action selector="btnpause:" destination="qkr-CV-fKW" eventType="touchUpInside" id="WfZ-4y-clG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mfr-FH-zo3" firstAttribute="leading" secondItem="hx9-8P-hOw" secondAttribute="leading" id="Cnl-AU-exc"/>
+                            <constraint firstItem="mfr-FH-zo3" firstAttribute="trailing" secondItem="hx9-8P-hOw" secondAttribute="trailing" id="NTW-rh-6Ht"/>
+                            <constraint firstItem="Mub-q4-Eng" firstAttribute="top" secondItem="hx9-8P-hOw" secondAttribute="top" constant="23" id="PsP-Qo-h3t"/>
+                            <constraint firstItem="wLx-sL-oNo" firstAttribute="bottom" secondItem="hx9-8P-hOw" secondAttribute="bottom" id="XWy-4U-oaL"/>
+                            <constraint firstItem="mfr-FH-zo3" firstAttribute="top" secondItem="9LF-Y4-ohF" secondAttribute="top" constant="127" id="cXA-EJ-OD7"/>
+                            <constraint firstItem="hx9-8P-hOw" firstAttribute="trailing" secondItem="Mub-q4-Eng" secondAttribute="trailing" constant="16" id="kVA-S2-1tA"/>
+                            <constraint firstItem="506-Yg-LUK" firstAttribute="bottom" secondItem="hx9-8P-hOw" secondAttribute="bottom" id="ktu-zR-ck0"/>
+                            <constraint firstItem="wLx-sL-oNo" firstAttribute="trailing" secondItem="hx9-8P-hOw" secondAttribute="trailing" id="qVn-VF-gsK"/>
+                            <constraint firstItem="506-Yg-LUK" firstAttribute="leading" secondItem="hx9-8P-hOw" secondAttribute="leading" id="vDK-pJ-tRr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hx9-8P-hOw"/>
+                    </view>
+                    <connections>
+                        <outlet property="pausebutton" destination="wLx-sL-oNo" id="mcT-Td-vxS"/>
+                        <outlet property="playbutton" destination="506-Yg-LUK" id="6ym-Cw-1Fe"/>
+                        <outlet property="titlelabel" destination="mfr-FH-zo3" id="an2-sW-HfC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZp-9W-Yby" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="16" height="16"/>
+        <image name="play" width="16" height="16"/>
+    </resources>
+</document>
